@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid</title>
+</head>
+<style>
+    body {
+        background-color: #3b0054;
+    }
+    
+    .Main-Div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        gap: 70px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .Left-Side {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 50% 25%;
+        height: 750px;
+        gap: 25px;
+        width: 800px;
+
+    }
+
+    .Left-Purple {
+        background-color: #c86ed1;
+        display: grid;
+        grid-column: span 2;
+    }
+
+    .Left-Yellow {
+        
+        background-color: #FBae17;
+        
+    }
+
+    .Left-Lite-Blue {
+        background-color: #1cc7d0;
+        grid-row: span 2;
+    }
+    
+    .Left-Red {
+        background-color: #ef3e3a;
+       
+    }
+
+    .Right-Side {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        height: 800px;
+        width: 800px;
+        gap: 25px;
+
+    }
+
+    .Right-Red-Left {
+        background-color: #ef3e3a;
+    }
+
+    .Right-lite-Blue-Left {
+        background-color: #1cc7d0;
+        grid-row-start: 2;
+        
+    }
+
+    .Right-Yellow-Left {
+        background-color: #FBae17;
+        grid-row-start: 3;
+        
+    }
+
+    .Right-Lite-Blue-Right {
+        background-color: #1cc7d0;
+        grid-column-start: 2;
+        height: 120%;
+    }
+
+    .Right-YellowRight {
+        background-color: #FBae17;
+        height: 90%;
+        margin-top: 15%;
+    }
+        
+    
+
+    .Right-Red-Right {
+        background-color: #ef3e3a;
+        height: 70%;
+        margin-top: 14%;
+    }
+
+    .Right-Purple {
+        background-color: #c86ed1;
+        grid-column: span 2;
+            
+    }
+
+    
+
+
+
+
+    
+
+    
+    
+
+</style>
+<body>
+    <div class="Main-Div">
+        <div class="Left-Side">
+            <div class="Left-Purple"></div>
+            <div class="Left-Yellow"></div>
+            <div class="Left-Lite-Blue"></div>
+            <div class="Left-Red"></div>
+        </div>
+
+        <div class="Right-Side">
+            <div class="Right-Red-Left"></div>
+            <div class="Right-lite-Blue-Left"></div>
+            <div class="Right-Yellow-Left"></div>
+            <div class="Right-Lite-Blue-Right"></div>
+            <div class="Right-YellowRight"></div>
+            <div class="Right-Red-Right"></div>
+            <div class="Right-Purple"></div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
